@@ -91,8 +91,9 @@ with st.sidebar:
     auto_switch_preset = None
     if prompt_text.strip():
         parsed = parse_prompt(prompt_text)
-        if parsed.suggested_preset and parsed.suggested_preset in presets:
-            auto_switch_preset = parsed.suggested_preset
+        suggested = getattr(parsed, "suggested_preset", None)
+        if suggested and suggested in presets:
+            auto_switch_preset = suggested
             st.info(f"偵測到主題，建議切換：**{auto_switch_preset}**")
         if parsed.style_tags:
             st.caption(f"風格標籤：{', '.join(parsed.style_tags)}")
@@ -171,6 +172,9 @@ else:
 
     # Determine effective preset (auto-switch from prompt if suggested)
     active_preset_name = auto_switch_preset if auto_switch_preset else selected
+    if active_preset_name not in presets:
+        # Fallback to first available preset if selection state is inconsistent
+        active_preset_name = list(presets.keys())[0]
     base_params = dict(presets[active_preset_name])
 
     if parsed is not None:
