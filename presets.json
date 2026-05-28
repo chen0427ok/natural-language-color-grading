@@ -106,6 +106,157 @@
     },
     "split_tone": null
   },
+  "Food: Bright & Airy": {
+    "description": "明亮輕透、白色背景、清新感、早午餐咖啡廳菜單",
+    "exposure": 0.25,
+    "contrast": 0.88,
+    "saturation": 0.92,
+    "vibrance": 14,
+    "temperature": 5,
+    "tint": 0,
+    "highlights": -25,
+    "shadows": 20,
+    "blacks": 8,
+    "fade": 0.06,
+    "grain": 0,
+    "vignette": 0,
+    "clarity": 2,
+    "curve": "soft_s",
+    "hsl": {
+      "orange_hue": -8,
+      "yellow_sat": -10,
+      "red_hue": -5
+    },
+    "split_tone": null
+  },
+  "Food: Moody Dark": {
+    "description": "戲劇暗調、高對比、精緻餐廳感、巧克力甜點紅酒",
+    "exposure": -0.25,
+    "contrast": 1.12,
+    "saturation": 0.88,
+    "vibrance": 0,
+    "temperature": -5,
+    "tint": 2,
+    "highlights": -45,
+    "shadows": -22,
+    "blacks": -15,
+    "fade": 0,
+    "grain": 0.08,
+    "vignette": 0.18,
+    "clarity": 18,
+    "curve": null,
+    "hsl": {
+      "blue_sat": -10,
+      "green_sat": -8
+    },
+    "split_tone": {
+      "shadows": [10, 5, 30],
+      "highlights": [255, 230, 180]
+    }
+  },
+  "Food: Warm Cafe": {
+    "description": "暖調咖啡廳、木質感、奶油色調、咖啡甜點早餐",
+    "exposure": 0.10,
+    "contrast": 0.94,
+    "saturation": 0.90,
+    "vibrance": 8,
+    "temperature": 12,
+    "tint": -4,
+    "highlights": -15,
+    "shadows": 15,
+    "blacks": 5,
+    "fade": 0.08,
+    "grain": 0.05,
+    "vignette": 0.05,
+    "clarity": 3,
+    "curve": "soft_s",
+    "hsl": {
+      "orange_hue": -12,
+      "red_hue": -8,
+      "yellow_hue": -6
+    },
+    "split_tone": {
+      "shadows": [30, 20, 0],
+      "highlights": [255, 240, 200]
+    }
+  },
+  "Food: Clean & Fresh": {
+    "description": "清爽乾淨、低飽和、健康餐食、沙拉輕食平面拍攝",
+    "exposure": 0.20,
+    "contrast": 0.90,
+    "saturation": 0.88,
+    "vibrance": 10,
+    "temperature": -3,
+    "tint": 0,
+    "highlights": -20,
+    "shadows": 18,
+    "blacks": 6,
+    "fade": 0.04,
+    "grain": 0,
+    "vignette": 0,
+    "clarity": 5,
+    "curve": null,
+    "hsl": {
+      "green_hue": 8,
+      "green_sat": 5,
+      "yellow_sat": -8,
+      "orange_sat": -5
+    },
+    "split_tone": null
+  },
+  "Food: Vintage Film": {
+    "description": "底片感褪色暖調、復古料理書風格、手作麵包甜點",
+    "exposure": -0.05,
+    "contrast": 1.02,
+    "saturation": 0.82,
+    "vibrance": 5,
+    "temperature": 8,
+    "tint": -2,
+    "highlights": -18,
+    "shadows": 12,
+    "blacks": 10,
+    "fade": 0.15,
+    "grain": 0.12,
+    "vignette": 0.10,
+    "clarity": -3,
+    "curve": null,
+    "hsl": {
+      "orange_hue": -10,
+      "red_hue": -5,
+      "yellow_hue": -8,
+      "yellow_sat": -12
+    },
+    "split_tone": {
+      "shadows": [25, 15, 0],
+      "highlights": [255, 240, 195]
+    }
+  },
+  "Food: Fine Dining": {
+    "description": "精緻米其林感、高反差深色調、主廚擺盤高端餐廳",
+    "exposure": -0.15,
+    "contrast": 1.08,
+    "saturation": 0.90,
+    "vibrance": 5,
+    "temperature": -3,
+    "tint": 0,
+    "highlights": -35,
+    "shadows": -10,
+    "blacks": -8,
+    "fade": 0,
+    "grain": 0.03,
+    "vignette": 0.12,
+    "clarity": 12,
+    "curve": "soft_s",
+    "hsl": {
+      "red_hue": -8,
+      "orange_hue": -5,
+      "blue_sat": -15
+    },
+    "split_tone": {
+      "shadows": [5, 5, 20],
+      "highlights": [255, 235, 190]
+    }
+  },
   "Teal & Orange": {
     "description": "青橘對比、商業感、電影視覺",
     "exposure": 0.00,

@@ -25,6 +25,43 @@ CROP_WIDE_KEYWORDS = {"16:9", "寬螢幕", "wide"}
 CENTER_COMP_KEYWORDS = {"中央構圖", "置中", "center", "centered"}
 THIRDS_COMP_KEYWORDS = {"三分法", "rule of thirds", "三分線"}
 
+# Food-specific theme keywords → maps to food preset names
+FOOD_THEME_KEYWORDS: dict[str, str] = {
+    "早餐": "Food: Bright & Airy",
+    "breakfast": "Food: Bright & Airy",
+    "明亮食物": "Food: Bright & Airy",
+    "bright food": "Food: Bright & Airy",
+    "咖啡廳": "Food: Warm Cafe",
+    "咖啡": "Food: Warm Cafe",
+    "cafe": "Food: Warm Cafe",
+    "coffee": "Food: Warm Cafe",
+    "甜點": "Food: Warm Cafe",
+    "pastry": "Food: Warm Cafe",
+    "麵包": "Food: Vintage Film",
+    "bread": "Food: Vintage Film",
+    "手作": "Food: Vintage Film",
+    "artisan": "Food: Vintage Film",
+    "烘焙": "Food: Vintage Film",
+    "bakery": "Food: Vintage Film",
+    "巧克力": "Food: Moody Dark",
+    "chocolate": "Food: Moody Dark",
+    "紅酒": "Food: Moody Dark",
+    "wine": "Food: Moody Dark",
+    "暗調食物": "Food: Moody Dark",
+    "沙拉": "Food: Clean & Fresh",
+    "salad": "Food: Clean & Fresh",
+    "健康": "Food: Clean & Fresh",
+    "healthy": "Food: Clean & Fresh",
+    "蔬菜": "Food: Clean & Fresh",
+    "vegetables": "Food: Clean & Fresh",
+    "清爽": "Food: Clean & Fresh",
+    "米其林": "Food: Fine Dining",
+    "餐廳": "Food: Fine Dining",
+    "restaurant": "Food: Fine Dining",
+    "fine dining": "Food: Fine Dining",
+    "擺盤": "Food: Fine Dining",
+}
+
 
 @dataclass
 class ParseResult:
@@ -32,6 +69,7 @@ class ParseResult:
     param_delta: dict = field(default_factory=dict)
     crop_suggestion_hint: str | None = None
     local_adjustment_hint: list[str] = field(default_factory=list)
+    suggested_preset: str | None = None  # direct preset name from theme keyword
 
 
 def parse_prompt(text: str) -> ParseResult:
@@ -89,6 +127,12 @@ def parse_prompt(text: str) -> ParseResult:
         result.local_adjustment_hint.append("edge_darken")
     if hit(BG_SUPPRESS_KEYWORDS):
         result.local_adjustment_hint.append("edge_darken")
+
+    # Food theme direct preset suggestion
+    for kw, preset_name in FOOD_THEME_KEYWORDS.items():
+        if kw in t:
+            result.suggested_preset = preset_name
+            break
 
     # Crop hints
     if hit(CROP_SQUARE_KEYWORDS):

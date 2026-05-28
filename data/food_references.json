@@ -1,0 +1,216 @@
+{
+  "_meta": {
+    "theme": "food",
+    "description": "Curated food photography color grading reference presets. Parameters compiled from professional food photography guides, Lightroom tutorials, and editorial standards.",
+    "sources": [
+      "digital-photography-school.com/how-edit-food-photography-images-using-lightroom/",
+      "foodphotographyacademy.co - color grading in-depth guide",
+      "twolovesstudio.com - edit color lightroom food photography",
+      "presetpedia.com - food lightroom presets analysis",
+      "proedu.com - lightroom workflow food photography"
+    ],
+    "version": "1.0",
+    "notes": "All values mapped to project parameter schema. Temperature/tint are offset values, not Kelvin. HSL values are degree/percentage offsets."
+  },
+  "presets": {
+    "Food: Bright & Airy": {
+      "description": "明亮輕透、白色背景、清新感、適合早午餐與咖啡廳菜單",
+      "style_tags": ["bright", "airy", "clean", "cafe", "breakfast", "menu"],
+      "crop_hints": ["1:1", "4:5"],
+      "exposure": 0.25,
+      "contrast": 0.88,
+      "saturation": 0.92,
+      "vibrance": 14,
+      "temperature": 5,
+      "tint": 0,
+      "highlights": -25,
+      "shadows": 20,
+      "blacks": 8,
+      "fade": 0.06,
+      "grain": 0,
+      "vignette": 0,
+      "clarity": 2,
+      "curve": "soft_s",
+      "hsl": {
+        "orange_hue": -8,
+        "yellow_sat": -10,
+        "red_hue": -5
+      },
+      "split_tone": null,
+      "rationale": "Lifted exposure + reduced highlights + boosted shadows creates the characteristic airy look. Slightly warm temperature makes food look appetizing. Reduced yellow saturation prevents over-garish greens. Vibrance over saturation protects warm skin/food tones."
+    },
+    "Food: Moody Dark": {
+      "description": "戲劇暗調、高對比、精緻餐廳感、適合巧克力甜點與紅酒",
+      "style_tags": ["moody", "dark", "dramatic", "fine dining", "chocolate", "dessert"],
+      "crop_hints": ["3:4", "4:5"],
+      "exposure": -0.25,
+      "contrast": 1.12,
+      "saturation": 0.88,
+      "vibrance": 0,
+      "temperature": -5,
+      "tint": 2,
+      "highlights": -45,
+      "shadows": -22,
+      "blacks": -15,
+      "fade": 0,
+      "grain": 0.08,
+      "vignette": 0.18,
+      "clarity": 18,
+      "curve": null,
+      "hsl": {
+        "blue_sat": -10,
+        "green_sat": -8
+      },
+      "split_tone": {
+        "shadows": [10, 5, 30],
+        "highlights": [255, 230, 180]
+      },
+      "rationale": "Pulled-down highlights and shadows with boosted contrast creates chiaroscuro drama. Slight blue-tint (cool temperature) adds sophistication. High clarity brings out food textures. Warm highlight split tone keeps the subject warm against dark background."
+    },
+    "Food: Warm Cafe": {
+      "description": "暖調咖啡廳、木質感、奶油色調、適合咖啡甜點與早餐",
+      "style_tags": ["warm", "cafe", "coffee", "pastry", "cozy", "rustic", "bread", "breakfast"],
+      "crop_hints": ["1:1", "4:5", "3:4"],
+      "exposure": 0.10,
+      "contrast": 0.94,
+      "saturation": 0.90,
+      "vibrance": 8,
+      "temperature": 12,
+      "tint": -4,
+      "highlights": -15,
+      "shadows": 15,
+      "blacks": 5,
+      "fade": 0.08,
+      "grain": 0.05,
+      "vignette": 0.05,
+      "clarity": 3,
+      "curve": "soft_s",
+      "hsl": {
+        "orange_hue": -12,
+        "red_hue": -8,
+        "yellow_hue": -6
+      },
+      "split_tone": {
+        "shadows": [30, 20, 0],
+        "highlights": [255, 240, 200]
+      },
+      "rationale": "High temperature shift creates warm amber glow typical of cafe window light. Orange/red hue shifts keep food tones rich. Slight green tint compensates for incandescent cast. Fade adds film warmth. Warm split tone in shadows and highlights unifies the palette."
+    },
+    "Food: Clean & Fresh": {
+      "description": "清爽乾淨、低飽和、健康餐食、適合沙拉輕食與平面拍攝",
+      "style_tags": ["clean", "fresh", "healthy", "flat lay", "salad", "light", "minimal", "vegetables"],
+      "crop_hints": ["1:1", "3:4"],
+      "exposure": 0.20,
+      "contrast": 0.90,
+      "saturation": 0.88,
+      "vibrance": 10,
+      "temperature": -3,
+      "tint": 0,
+      "highlights": -20,
+      "shadows": 18,
+      "blacks": 6,
+      "fade": 0.04,
+      "grain": 0,
+      "vignette": 0,
+      "clarity": 5,
+      "curve": null,
+      "hsl": {
+        "green_hue": 8,
+        "green_sat": 5,
+        "yellow_sat": -8,
+        "orange_sat": -5
+      },
+      "split_tone": null,
+      "rationale": "Slightly cool temperature gives crisp freshness. Boosted green hue and saturation makes vegetables vibrant. Reduced orange/yellow saturation prevents oversaturation of warm foods. Clean, no-vignette presentation for flat lay compositions."
+    },
+    "Food: Vintage Film": {
+      "description": "底片感、褪色暖調、復古料理書風格、適合手作麵包甜點",
+      "style_tags": ["vintage", "film", "retro", "warm", "faded", "baked", "artisan", "bakery"],
+      "crop_hints": ["3:4", "1:1"],
+      "exposure": -0.05,
+      "contrast": 1.02,
+      "saturation": 0.82,
+      "vibrance": 5,
+      "temperature": 8,
+      "tint": -2,
+      "highlights": -18,
+      "shadows": 12,
+      "blacks": 10,
+      "fade": 0.15,
+      "grain": 0.12,
+      "vignette": 0.10,
+      "clarity": -3,
+      "curve": null,
+      "hsl": {
+        "orange_hue": -10,
+        "red_hue": -5,
+        "yellow_hue": -8,
+        "yellow_sat": -12
+      },
+      "split_tone": {
+        "shadows": [25, 15, 0],
+        "highlights": [255, 240, 195]
+      },
+      "rationale": "Strong fade + grain mimics analog film stocks. Reduced clarity softens the image. Warm split tone with amber highlights and brown shadows creates that recipe-book nostalgic warmth. Reduced saturation prevents the vintage look from appearing artificially colorized."
+    },
+    "Food: Fine Dining": {
+      "description": "精緻米其林感、高反差、深色調、適合主廚擺盤與高端餐廳",
+      "style_tags": ["fine dining", "michelin", "plating", "elegant", "restaurant", "dark plate", "sauce"],
+      "crop_hints": ["4:5", "3:4"],
+      "exposure": -0.15,
+      "contrast": 1.08,
+      "saturation": 0.90,
+      "vibrance": 5,
+      "temperature": -3,
+      "tint": 0,
+      "highlights": -35,
+      "shadows": -10,
+      "blacks": -8,
+      "fade": 0,
+      "grain": 0.03,
+      "vignette": 0.12,
+      "clarity": 12,
+      "curve": "soft_s",
+      "hsl": {
+        "red_hue": -8,
+        "orange_hue": -5,
+        "blue_sat": -15
+      },
+      "split_tone": {
+        "shadows": [5, 5, 20],
+        "highlights": [255, 235, 190]
+      },
+      "rationale": "Subtle S-curve with pulled highlights gives professional editorial look. Slight cool shadow split creates depth and elegance. Vignette frames the composed dish. Low grain adds subtle texture. Less dramatic than Moody Dark but maintains refinement."
+    }
+  },
+  "keyword_map": {
+    "早餐": "Food: Bright & Airy",
+    "breakfast": "Food: Bright & Airy",
+    "咖啡廳": "Food: Warm Cafe",
+    "咖啡": "Food: Warm Cafe",
+    "cafe": "Food: Warm Cafe",
+    "coffee": "Food: Warm Cafe",
+    "甜點": "Food: Warm Cafe",
+    "pastry": "Food: Warm Cafe",
+    "巧克力": "Food: Moody Dark",
+    "chocolate": "Food: Moody Dark",
+    "紅酒": "Food: Moody Dark",
+    "wine": "Food: Moody Dark",
+    "沙拉": "Food: Clean & Fresh",
+    "salad": "Food: Clean & Fresh",
+    "健康": "Food: Clean & Fresh",
+    "healthy": "Food: Clean & Fresh",
+    "蔬菜": "Food: Clean & Fresh",
+    "vegetables": "Food: Clean & Fresh",
+    "手作": "Food: Vintage Film",
+    "麵包": "Food: Vintage Film",
+    "bread": "Food: Vintage Film",
+    "復古": "Food: Vintage Film",
+    "vintage": "Food: Vintage Film",
+    "米其林": "Food: Fine Dining",
+    "餐廳": "Food: Fine Dining",
+    "restaurant": "Food: Fine Dining",
+    "fine dining": "Food: Fine Dining",
+    "擺盤": "Food: Fine Dining"
+  }
+}
