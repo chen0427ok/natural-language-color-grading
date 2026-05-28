@@ -82,6 +82,30 @@
     "clarity": -6,
     "split_tone": null
   },
+  "Street Japanese": {
+    "description": "日系街拍、微暖偏綠、黃橘色調、降藍綠飽和",
+    "exposure": -0.08,
+    "contrast": 0.92,
+    "saturation": 0.94,
+    "vibrance": 6,
+    "temperature": 4,
+    "tint": -4,
+    "highlights": -10,
+    "shadows": 10,
+    "blacks": -4,
+    "fade": 0.06,
+    "grain": 0.05,
+    "vignette": 0.06,
+    "clarity": 3,
+    "curve": "soft_s",
+    "hsl": {
+      "yellow_hue": -18,
+      "green_hue": 15,
+      "green_sat": -20,
+      "blue_sat": -15
+    },
+    "split_tone": null
+  },
   "Teal & Orange": {
     "description": "青橘對比、商業感、電影視覺",
     "exposure": 0.00,
